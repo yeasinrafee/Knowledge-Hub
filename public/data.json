@@ -1,0 +1,38 @@
+[
+  {
+    "id": "01",
+    "name": "Yeasin Rafi",
+    "title": "Debugging 101: Strategies for Finding and Fixing Bugs in Your Code",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+    "author_image": "https://oliver-andersen.se/wp-content/uploads/2018/03/cropped-Profile-Picture-Round-Color.png",
+    "read_time": "10",
+    "publish_date": "Mar 15 (6 days ago)"
+  },
+  {
+    "id": "02",
+    "name": "Chris Adams",
+    "title": "Mastering Git: A Comprehensive Guide to Version Control for Programmers",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+    "author_image": "https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png",
+    "read_time": "05",
+    "publish_date": "Mar 08 (12 days ago)"
+  },
+  {
+    "id": "03",
+    "name": "Nathan Lyon",
+    "title": "Building Better Software: Best Practices for Agile Development",
+    "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "author_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsiHCKYJayWq_kDj5__9eqrpe4kqcYPd8AeykdaHnjNtaQK1hUZc-SOUYSMCSQnk0M9Y&usqp=CAU",
+    "read_time": "12",
+    "publish_date": "Feb 13 (1 month ago)"
+  },
+  {
+    "id": "04",
+    "name": "Robber Boris",
+    "title": "The Art of Code: How to Write Clean, Readable, and Maintainable Code",
+    "image": "https://images.unsplash.com/photo-1669023414162-8b0573b9c6b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80",
+    "author_image": "https://uploads-ssl.webflow.com/62a6b6f5af304fa0642fac15/62e20bd38cb88778598550ce_LAURAPROFILECIRCLENEW.png",
+    "read_time": "15",
+    "publish_date": "Jan 07 (2 months ago)"
+  }
+]
