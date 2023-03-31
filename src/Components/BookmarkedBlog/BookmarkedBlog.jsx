@@ -1,14 +1,16 @@
 import React from "react";
 
-const BookmarkedBlog = () => {
+const BookmarkedBlog = ({ titleContainer, count }) => {
+  //   console.log(count);
   return (
     <div className="my-6 text-left p-7 bg-red-100 rounded-md">
-      <h2 className="font-bold text-lg">Bookmarked Blogs: 00</h2>
-      <div className="p-6 bg-white rounded-md my-5">
-        <h3 className="font-bold text-sm">
-          Master Microsoft Power Platform and Become an In-Demand!
-        </h3>
-      </div>
+      <h2 className="font-bold text-lg">Bookmarked Blogs: {count}</h2>
+      {titleContainer &&
+        titleContainer.map((title, index) => (
+          <div key={index} className="p-6 bg-white rounded-md my-5">
+            <h3 className="font-bold text-sm">{title}</h3>
+          </div>
+        ))}
     </div>
   );
 };

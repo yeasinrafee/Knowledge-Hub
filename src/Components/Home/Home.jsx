@@ -8,7 +8,6 @@ const Home = (props) => {
     const loadData = async () => {
       const res = await fetch("data.json");
       const data = await res.json();
-      console.log(data);
       setBlogs(data);
     };
     loadData();
@@ -21,6 +20,7 @@ const Home = (props) => {
           blog={blog}
           key={blog.id}
           handleReadingTime={props.handleReadingTime}
+          getTitle={props.getTitle}
         />
       ))}
     </div>

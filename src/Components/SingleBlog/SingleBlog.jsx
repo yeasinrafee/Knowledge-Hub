@@ -4,9 +4,12 @@ const SingleBlog = (props) => {
   const { name, title, image, author_image, read_time, publish_date } =
     props.blog;
   const [bookMarked, setBookMarked] = useState(false);
+  const [count, setCount] = useState(0);
 
   const handleBookmark = () => {
     bookMarked ? setBookMarked(false) : setBookMarked(true);
+    setCount(count + 1);
+    props.getTitle(title, count);
   };
 
   return (
