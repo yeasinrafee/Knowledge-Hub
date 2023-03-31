@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BookmarkedBlog from "../BookmarkedBlog/BookmarkedBlog";
 
 const Sidebar = ({ readingTime }) => {
   const [time, setTime] = useState(0);
@@ -18,6 +19,7 @@ const Sidebar = ({ readingTime }) => {
           <p className="font-bold text-blue-600">Spent time on read: 0 min</p>
         )}
       </div>
+      <BookmarkedBlog />
     </div>
   );
 };
