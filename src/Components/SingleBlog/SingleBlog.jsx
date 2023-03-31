@@ -64,7 +64,10 @@ const SingleBlog = (props) => {
         <p className="mb-4 text-gray-500">
           <span className="mr-4">#beginner</span> <span>#programming</span>
         </p>
-        <p className="text-blue-600 font-bold underline cursor-pointer">
+        <p
+          onClick={() => props.handleReadingTime(+read_time)}
+          className="text-blue-600 font-bold underline cursor-pointer"
+        >
           Mark as read
         </p>
       </div>

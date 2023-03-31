@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleBlog from "../SingleBlog/SingleBlog";
 
-const Home = () => {
+const Home = (props) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -17,7 +17,11 @@ const Home = () => {
   return (
     <div className="w-full">
       {blogs.map((blog) => (
-        <SingleBlog blog={blog} key={blog.id} />
+        <SingleBlog
+          blog={blog}
+          key={blog.id}
+          handleReadingTime={props.handleReadingTime}
+        />
       ))}
     </div>
   );
