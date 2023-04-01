@@ -31,9 +31,11 @@ function App() {
     if (titleContainer.includes(title)) {
       toast("You Have Already Bookmarked This Blog");
     } else {
-      setTitleContainer([...titleContainer, title]);
+      // setTitleContainer([...titleContainer, title]);    // If we don't want to add more than one time
     }
-    setCount(count + 1);
+    setTitleContainer([...titleContainer, title]); //If we want to add more than one time
+    const previousCount = count;
+    setCount(previousCount + 1);
     setBookmark(bookmark);
   };
 
