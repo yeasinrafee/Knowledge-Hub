@@ -9,7 +9,7 @@ const SingleBlog = (props) => {
   const handleBookmark = () => {
     setBookMarked(true);
     setCount(count + 1);
-    props.getTitle(title, count, bookMarked);
+    props.getTitle(title, count);
   };
 
   return (

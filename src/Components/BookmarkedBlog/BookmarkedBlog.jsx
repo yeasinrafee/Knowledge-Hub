@@ -1,6 +1,6 @@
 import React from "react";
 
-const BookmarkedBlog = ({ titleContainer, count, bookmark }) => {
+const BookmarkedBlog = ({ titleContainer, count }) => {
   return (
     <div className="my-6 text-left p-7 bg-red-100 rounded-md">
       <h2 className="font-bold text-lg">

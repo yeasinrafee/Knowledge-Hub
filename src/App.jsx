@@ -12,8 +12,6 @@ function App() {
   const [titleContainer, setTitleContainer] = useState([]);
   const [count, setCount] = useState();
 
-  const [bookmark, setBookmark] = useState(false);
-
   const handleReadingTime = (time) => {
     const previousReadingTime = JSON.parse(localStorage.getItem("readingTime"));
 
@@ -27,7 +25,7 @@ function App() {
     }
   };
 
-  const getTitle = (title, count, bookmark) => {
+  const getTitle = (title, count) => {
     if (titleContainer.includes(title)) {
       toast("You Have Already Bookmarked This Blog");
     } else {
@@ -36,7 +34,6 @@ function App() {
     setTitleContainer([...titleContainer, title]); //If we want to add more than one time
     const previousCount = count;
     setCount(previousCount + 1);
-    setBookmark(bookmark);
   };
 
   return (
@@ -52,7 +49,6 @@ function App() {
             readingTime={readingTime}
             titleContainer={titleContainer}
             count={count}
-            bookmark={bookmark}
           />
         </div>
       </div>
