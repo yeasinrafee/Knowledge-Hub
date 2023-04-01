@@ -3,11 +3,15 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [readingTime, setReadingTime] = useState("");
   const [titleContainer, setTitleContainer] = useState([]);
   const [count, setCount] = useState();
+
+  const [bookmark, setBookmark] = useState(false);
 
   const handleReadingTime = (time) => {
     const previousReadingTime = JSON.parse(localStorage.getItem("readingTime"));
@@ -22,9 +26,14 @@ function App() {
     }
   };
 
-  const getTitle = (title, count) => {
-    setTitleContainer([...titleContainer, title]);
-    setCount(count);
+  const getTitle = (title, count, bookmark) => {
+    if (titleContainer.includes(title)) {
+      toast("You Have Already Bookmarked This Blog");
+    } else {
+      setTitleContainer([...titleContainer, title]);
+    }
+    setCount(count + 1);
+    setBookmark(bookmark);
   };
 
   return (
@@ -40,9 +49,11 @@ function App() {
             readingTime={readingTime}
             titleContainer={titleContainer}
             count={count}
+            bookmark={bookmark}
           />
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

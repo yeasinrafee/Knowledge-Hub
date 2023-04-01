@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BookmarkedBlog from "../BookmarkedBlog/BookmarkedBlog";
 
-const Sidebar = ({ readingTime, titleContainer, count }) => {
+const Sidebar = ({ readingTime, titleContainer, count, bookmark }) => {
   const [time, setTime] = useState(0);
   useEffect(() => {
     const getTimeLocalStorage = localStorage.getItem("readingTime");
@@ -19,7 +19,11 @@ const Sidebar = ({ readingTime, titleContainer, count }) => {
           <p className="font-bold text-blue-600">Spent time on read: 0 min</p>
         )}
       </div>
-      <BookmarkedBlog titleContainer={titleContainer} count={count} />
+      <BookmarkedBlog
+        titleContainer={titleContainer}
+        count={count}
+        bookmark={bookmark}
+      />
     </div>
   );
 };
