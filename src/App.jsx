@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import QandA from "./QandA/QandA";
 
 function App() {
   const [readingTime, setReadingTime] = useState("");
@@ -54,6 +55,7 @@ function App() {
         </div>
       </div>
       <ToastContainer></ToastContainer>
+      <QandA />
     </div>
   );
 }
