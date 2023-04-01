@@ -15,8 +15,8 @@ const SingleBlog = (props) => {
   return (
     <div className="my-9">
       <img className="w-4/5 h-96 rounded-lg mx-auto" src={image} alt="" />
-      <div className="mx-28 my-8">
-        <div className="flex justify-between">
+      <div className="mx-5 md:mx-28 my-8">
+        <div className="flex justify-between items-center">
           <div className="flex gap-6 items-center">
             <img className="w-16 h-16" src={author_image} alt="" />
             <div className="text-left">
@@ -62,7 +62,7 @@ const SingleBlog = (props) => {
           </p>
         </div>
       </div>
-      <div className="text-left mx-28 my-8">
+      <div className="text-left mx-5 md:mx-28 my-8">
         <h1 className="font-bold text-3xl leading-relaxed mb-4">{title}</h1>
         <p className="mb-4 text-gray-500">
           <span className="mr-4">#beginner</span> <span>#programming</span>

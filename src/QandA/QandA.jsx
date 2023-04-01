@@ -2,7 +2,7 @@ import React from "react";
 
 const QandA = () => {
   return (
-    <div className="my-9 mx-80">
+    <div className="my-9 md:mx-80">
       <h1 className="font-bold text-3xl leading-relaxed mb-4">
         Questions and Answers:
       </h1>
